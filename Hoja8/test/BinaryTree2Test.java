@@ -1,3 +1,8 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -7,8 +12,8 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * Clase de pruebas unitarias para la clase del nodo binario.
- *ANDREA ELIAS
+ *
+ * @author Andrea
  */
 public class BinaryTree2Test {
     
@@ -30,29 +35,58 @@ public class BinaryTree2Test {
     @After
     public void tearDown() {
     }
-    
+
+    /**
+     * Test of getRaiz method, of class BinaryTree2.
+     */
+    @Test
+    public void testGetRaiz() {
+        System.out.println("getRaiz");
+        BinaryTree2 instance = null;
+        BinaryNode expResult = null;
+        BinaryNode result = instance.getRaiz();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of setRaiz method, of class BinaryTree2.
+     */
+    @Test
+    public void testSetRaiz() {
+        System.out.println("setRaiz");
+        BinaryTree2 instance = null;
+        instance.setRaiz(null);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
     /**
      * Test of addNodo method, of class BinaryTree2.
      */
     @Test
     public void testAddNodo() {
         System.out.println("addNodo");
-        BinaryNode<String> nuevoNodo = null;
-        BinaryTree2<String> tree = new BinaryTree2<String>(nuevoNodo);
-        
-        nuevoNodo = new BinaryNode<>("CHILD","NINO");
-        tree.addNodo(nuevoNodo);
-        
-        BinaryNode actual1 = tree.getRaiz();
-        String expected1 = "(CHILD, NINO)";
-        
-        if(actual1 != null){
-            
-        }else{
-            assertEquals(expected1, actual1);
-        }        
+        BinaryNode nodo = null;
+        BinaryTree2 instance = null;
+        instance.addNodo(nodo);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
+    /**
+     * Test of recorrer method, of class BinaryTree2.
+     */
+    @Test
+    public void testRecorrer() {
+        System.out.println("recorrer");
+        BinaryTree2.recorrido tipo = null;
+        BinaryTree2 instance = null;
+        instance.recorrer(tipo);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
 
     /**
      * Test of buscarPalabra method, of class BinaryTree2.
@@ -60,15 +94,13 @@ public class BinaryTree2Test {
     @Test
     public void testBuscarPalabra() {
         System.out.println("buscarPalabra");
-        BinaryNode<String> nuevoNodo = null;
-        BinaryTree2<String> tree = new BinaryTree2<String>(nuevoNodo);
-        
-        nuevoNodo = new BinaryNode<>("ICE", "HIELO");
-        tree.addNodo(nuevoNodo);
-        String actual1 = tree.buscarPalabra("ICE");
-        String expected1 = "HIELO";
-        
-        assertEquals(expected1, actual1); 
+        String palabra = "";
+        BinaryTree2 instance = null;
+        String expResult = "";
+        String result = instance.buscarPalabra(palabra);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
     
 }

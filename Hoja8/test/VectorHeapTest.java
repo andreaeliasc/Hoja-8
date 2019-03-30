@@ -13,11 +13,11 @@ import static org.junit.Assert.*;
 
 /**
  *
-
+ * @author Andrea
  */
 public class VectorHeapTest {
-
-    /**
+    
+  /**
      * Test of getFirst method, of class VectorHeap.
      */
     @Test
@@ -58,3 +58,4 @@ public class VectorHeapTest {
     }
 
 }
+
